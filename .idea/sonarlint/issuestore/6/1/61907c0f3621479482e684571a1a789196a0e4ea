@@ -1,0 +1,27 @@
+
+U
+java:S1854Y"8Remove this useless assignment to local variable "item".(²‚ÊÓ8ƒ‡ƒÿ/
+n
+java:S2095\"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(Œ¤×½ÿÿÿÿÿ8ƒ‡ƒÿ/
+>
+java:S1643`"Use a StringBuilder instead.(¥®¦±ÿÿÿÿÿ8÷¾ÏŸ/
+E
+java:S1066A"/Merge this if statement with the enclosing one.(êûÄ
+>
+java:S1643_"Use a StringBuilder instead.(ä¼Áûøÿÿÿÿ8÷¾ÏŸ/
+X	java:S125j"<This block of commented-out lines of code should be removed.(ë±Àë8ç›ÑŸ/
+9
+java:S1643c"Use a StringBuilder instead.(¤ê·Ì8ƒ‡ƒÿ/
+]	java:S125."<This block of commented-out lines of code should be removed.(áŒÖÂøÿÿÿÿ8´æ¼Ÿ/
+R
+java:S2209a"5Change this instance-reference to a static reference.(†ƒåš8ƒ‡ƒÿ/
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(û¡¨Ê
+E
+java:S1066@"/Merge this if statement with the enclosing one.(Ì‹ø
+8
+java:S1643b"Use a StringBuilder instead.(ƒ˜òy8ƒ‡ƒÿ/
+[	java:S112#"FDefine and throw a dedicated exception instead of using a generic one.(§æ÷
+J
+java:S1066?"/Merge this if statement with the enclosing one.(ş®—šÿÿÿÿÿ
+F
+java:S1481Y")Remove this unused "item" local variable.(²‚ÊÓ8ƒ‡ƒÿ/

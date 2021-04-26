@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2e3348;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.morsecode.controllers.authorController">
+    <children>
+        <AnchorPane layoutY="108.0" prefHeight="293.0" prefWidth="701.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <ImageView fx:id="imageButtonHome2" fitHeight="52.0" fitWidth="54.0" layoutX="14.0" layoutY="227.0" onMousePressed="#homeBtn" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@/org/morsecode/assets/home.png" />
+                    </image>
+                </ImageView>
+            <Text layoutX="139.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Автор программы:" textAlignment="CENTER" wrappingWidth="443.1652069091797">
+               <font>
+                  <Font name="PT Sans" size="22.0" />
+               </font>
+            </Text>
+            <Text layoutX="139.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Лазарева Яна Владимировна" textAlignment="CENTER" wrappingWidth="443.1652069091797">
+               <font>
+                  <Font name="PT Sans" size="22.0" />
+               </font>
+            </Text>
+            <Text layoutX="140.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Студентка 2 курса, группы ПИ19-1" textAlignment="CENTER" wrappingWidth="443.1652069091797">
+               <font>
+                  <Font name="PT Sans" size="22.0" />
+               </font>
+            </Text>
+            <Text layoutX="139.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Факультета инфорамционных технологий и анализа больших данных" textAlignment="CENTER" wrappingWidth="443.1652069091797">
+               <font>
+                  <Font name="PT Sans" size="22.0" />
+               </font>
+            </Text>
+            </children>
+        </AnchorPane>
+        <Label layoutX="65.0" layoutY="26.0" text="Кодировщик азбуки Морзе" textFill="WHITE">
+            <font>
+                <Font name="PT Sans" size="48.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

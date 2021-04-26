@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2e3348;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.morsecode.controllers.HomeController">
+    <children>
+        <AnchorPane layoutY="108.0" prefHeight="293.0" prefWidth="701.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <Button fx:id="engDictButton" layoutX="565.0" layoutY="238.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="122.0" text="English dictionary">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="rusCodeButton" layoutX="77.0" layoutY="35.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="227.0" text="Русский -&gt; Азбука Морзе">
+               <font>
+                  <Font name="PT Sans" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="engCodeButton" layoutX="77.0" layoutY="103.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="227.0" text="Английский -&gt; Азбука Морзе">
+               <font>
+                  <Font name="PT Sans" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="codeRusButton" layoutX="380.0" layoutY="35.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="227.0" text="Азбука Морзе -&gt; Русский">
+               <font>
+                  <Font name="PT Sans" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="codeEngButton" layoutX="380.0" layoutY="103.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="227.0" text="Азбука Морзе -&gt; Английский">
+               <font>
+                  <Font name="PT Sans" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="rusDictButton" layoutX="565.0" layoutY="198.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="122.0" text=" Русский словарь">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Button>
+         </children>
+        </AnchorPane>
+        <Label layoutX="65.0" layoutY="27.0" text="Кодировщик азбуки Морзе" textFill="WHITE">
+            <font>
+                <Font name="PT Sans" size="48.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,62 @@
+
+?
+java:S1643Ã"Use a StringBuilder instead.(¶øˆšúÿÿÿÿ8ºÿş‡/
+
+java:S1130'"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(ÏÎåõùÿÿÿÿ8ĞÖŞã/
+U
+java:S1444}"3Make this "public static unknownLetter" field final(‰ÿ¾óşÿÿÿÿ8‚é¡/
+›
+java:S1130'"yRemove the declaration of thrown exception 'java.lang.ClassNotFoundException', as it cannot be thrown from method's body.(ÏÎåõùÿÿÿÿ8ĞÖŞã/
+J
+java:S1874@"-Remove this use of "Query"; it is deprecated.(—•¦8Û” ô/
+^	java:S125Ò"<This block of commented-out lines of code should be removed.(Úããˆùÿÿÿÿ8ºÿş‡/
+b	java:S100g"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡°ĞQ
+8
+java:S1643"Use a StringBuilder instead.(¶øˆšúÿÿÿÿ
+[	java:S106Ê"9Replace this use of System.out or System.err by a logger.(áÑ¦ùÿÿÿÿ8¬ñ¿¡/
+{
+java:S1104}"YMake unknownLetter a static final constant or non-public and provide accessors if needed.(‰ÿ¾óşÿÿÿÿ8‚é¡/
+p	java:S100á"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(È‚¾Òüÿÿÿÿ8ºÿş‡/
+Q	java:S125n"<This block of commented-out lines of code should be removed.(Íâßú
+Z
+java:S1854²"7Remove this useless assignment to local variable "rus".(Ãö¤Öøÿÿÿÿ8ºÿş‡/
+M
+java:S3740°"/Provide the parametrized type for this generic.(¶´‰Æ8ºÿş‡/
+–
+java:S1130S"yRemove the declaration of thrown exception 'java.lang.ClassNotFoundException', as it cannot be thrown from method's body.(”ôÒÿ8ĞÖŞã/
+K
+java:S1481²"(Remove this unused "rus" local variable.(Ãö¤Öøÿÿÿÿ8ºÿş‡/
+J
+java:S3740Y"/Provide the parametrized type for this generic.(Ú¶ØÖùÿÿÿÿ
+E
+java:S3740."/Provide the parametrized type for this generic.(£²Šå
+b
+java:S2095"EUse try-with-resources or close this "Session" in a "finally" clause.(ÌšØª8ĞÖŞã/
+Y	java:S125§"<This block of commented-out lines of code should be removed.(óÍĞú8ºÿş‡/
+?
+java:S1643»"Use a StringBuilder instead.(æü´Õûÿÿÿÿ8ºÿş‡/
+R
+java:S3740å"/Provide the parametrized type for this generic.(¿ê¶÷şÿÿÿÿ8ºÿş‡/
+@
+java:S1481+"+Remove this unused "resSet" local variable.(¨è¶M
+c
+java:S2095¤"EUse try-with-resources or close this "Session" in a "finally" clause.(ÌšØª8ºÿş‡/
+8
+java:S1643‰"Use a StringBuilder instead.(æü´Õûÿÿÿÿ
+P
+java:S1874å"-Remove this use of "Query"; it is deprecated.(¿ê¶÷şÿÿÿÿ8ºÿş‡/
+M
+java:S3740‚"/Provide the parametrized type for this generic.(¶´‰Æ8îœìÑ/
+‹
+java:S1130S"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(”ôÒÿ8ĞÖŞã/
+K
+java:S1874m"0Remove this use of "SQLQuery"; it is deprecated.(ìÉƒ¡ıÿÿÿÿ
+L
+java:S3740@"/Provide the parametrized type for this generic.(—•¦8Û” ô/
+H
+java:S1874Y"-Remove this use of "Query"; it is deprecated.(Ú¶ØÖùÿÿÿÿ
+J
+java:S3740m"/Provide the parametrized type for this generic.(ìÉƒ¡ıÿÿÿÿ
+F
+java:S1874."0Remove this use of "SQLQuery"; it is deprecated.(£²Šå
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›¢Ô…
