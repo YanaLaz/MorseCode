@@ -26,9 +26,11 @@ import org.morsecode.dao.Database;
 import org.morsecode.models.dict;
 
 
-// класс, в котором происходит подключение и вывод информации из БД, редактирование, удаление и добавление
-// новых значений в словарь, а также здесь происходит поиск и фильтрация значений и осуществляется
-// переход на страницу home.fxml.
+/**
+ * класс, в котором происходит подключение и вывод информации из БД, редактирование, удаление и добавление
+ * новых значений в словарь, а также здесь происходит поиск и фильтрация значений и осуществляется
+ * переход на страницу home.fxml.
+  */
 public class DictController {
 
     @FXML
@@ -68,7 +70,9 @@ public class DictController {
     private TextField filter;
 
 
-    // метод удаление значения из словаря
+    /**
+     * метод удаление значения из словаря
+      */
     @FXML
     void Delete(ActionEvent event)  {
         try {
@@ -87,7 +91,9 @@ public class DictController {
     }
 
 
-    // метод добавления нового значения в словарь
+    /**
+     * метод добавления нового значения в словарь
+     */
     @FXML
     public boolean addDict() {
         try {
@@ -115,7 +121,9 @@ public class DictController {
         return false;
     }
 
-    // метод редактирования значения
+    /**
+     * метод редактирования значения
+      */
     @FXML
     public void Edit() {
         try {
@@ -140,7 +148,9 @@ public class DictController {
     }
 
 
-    // метод Импорта словаря
+    /**
+     * метод Импорта словаря
+      */
     public boolean upload() throws IOException, SQLException, ClassNotFoundException {
         // FileChooser открывает вспомогающее окно с директорией проекта, где пользователь может выбарть
         // нужный для импорта файл
@@ -184,7 +194,9 @@ public class DictController {
         return true;
     }
 
-    //Проверка на то, что значений нет в словаре без проверки по ID. Нужно для upload и addDict
+    /**
+     * Проверка на то, что значений нет в словаре без проверки по ID. Нужно для upload и addDict
+     */
     public boolean checkData2(String rus, String code) throws SQLException, ClassNotFoundException {
         ObservableList<dict> data = Database.getDict();
         for (int i = 0; i < data.size(); i++){
@@ -201,7 +213,9 @@ public class DictController {
         return true;
     }
 
-    //Проверка на то, что значений нет в словаре с проверкой по ID. Нужно для edit
+    /**
+     * Проверка на то, что значений нет в словаре с проверкой по ID. Нужно для edit
+     */
     public boolean checkData(String id, String rus, String code) throws SQLException, ClassNotFoundException {
         ObservableList<dict> data = Database.getDict();
         for (int i = 0; i < data.size(); i++){
@@ -219,7 +233,9 @@ public class DictController {
     }
 
 
-    // переход на страницу главного меню при нажатии на кнопку-картинку Домой.
+    /**
+     * переход на страницу главного меню при нажатии на кнопку-картинку Домой.
+      */
     @FXML
     public void homeBtn1() throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/org/morsecode/home.fxml"));
@@ -239,7 +255,9 @@ public class DictController {
         }
     }
 
-    // метод выделения строки в таблице и переноса значений в поля для ввода
+    /**
+     * метод выделения строки в таблице и переноса значений в поля для ввода
+      */
     @FXML
     public void getSelected(javafx.scene.input.MouseEvent mouseEvent) {
         int index = -1;
@@ -254,7 +272,9 @@ public class DictController {
     }
 
 
-    // обновление таблицы
+    /**
+     * обновление таблицы
+      */
     public void updateTable() {
         txtId.setVisible(false);
         colId.setCellValueFactory(new PropertyValueFactory<dict, Integer>(Const.DICT_ID));
@@ -273,7 +293,9 @@ public class DictController {
         tableDict.setItems(listM);
     }
 
-    // поиск значений про критерию пользователя
+    /**
+     * поиск значений про критерию пользователя
+      */
     @FXML
     void search() throws SQLException, ClassNotFoundException {
         txtId.setVisible(false);
@@ -312,26 +334,34 @@ public class DictController {
         });
     }
 
-    // метод используется для того, чтобы вписать букву в поле ввода. Когда кодируемого значения нет в словаре
-    // появляется окно с предложением добавить это значение в словарь. Если пользователь соглашается,
-    // открывается словарь с установленным значением для буквы.
+    /**
+     * метод используется для того, чтобы вписать букву в поле ввода. Когда кодируемого значения нет в словаре
+     * появляется окно с предложением добавить это значение в словарь. Если пользователь соглашается,
+     * открывается словарь с установленным значением для буквы.
+      */
     public void showLetter(String letter){
         txtRus.setText(letter);
     }
 
-    // то же самое как с буквой только для кода
+    /**
+     * то же самое как с буквой только для кода
+      */
     public void showCode(String code){
         txtCode.setText(code);
     }
 
-    // очистка полей ввода
+    /**
+     * очистка полей ввода
+      */
     public void clear() {
         txtId.setText("");
         txtRus.setText("");
         txtCode.setText("");
     }
 
-    // вспомогательное окно с информацией
+    /**
+     * вспомогательное окно с информацией
+      */
     public void window(String wind){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Информация");
@@ -340,7 +370,9 @@ public class DictController {
         alert.showAndWait();
     }
 
-    // проверка, что пользователь ввёл - или .
+    /**
+     * проверка, что пользователь ввёл - или .
+      */
     public boolean checkCode(String code) {
         for (int j = 0; j < code.length(); j++) {
             String ent = String.valueOf(code.charAt(j));
@@ -352,7 +384,9 @@ public class DictController {
         return true;
     }
 
-    // проверка, что пользователь ввёл одну русскую букву 
+    /**
+     * проверка, что пользователь ввёл одну русскую букву
+      */
     public boolean checkRus(String rus) {
         String regex = "[а-яА-Я]";
         if (rus.length()>1){

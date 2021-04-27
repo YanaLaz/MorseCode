@@ -1,27 +1,27 @@
 
-U
-java:S1854Y"8Remove this useless assignment to local variable "item".(²‚ÊÓ8ƒ‡ƒÿ/
-n
-java:S2095\"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(Œ¤×½ÿÿÿÿÿ8ƒ‡ƒÿ/
->
-java:S1643`"Use a StringBuilder instead.(¥®¦±ÿÿÿÿÿ8÷¾ÏŸ/
-E
-java:S1066A"/Merge this if statement with the enclosing one.(êûÄ
->
-java:S1643_"Use a StringBuilder instead.(ä¼Áûøÿÿÿÿ8÷¾ÏŸ/
-X	java:S125j"<This block of commented-out lines of code should be removed.(ë±Àë8ç›ÑŸ/
-9
-java:S1643c"Use a StringBuilder instead.(¤ê·Ì8ƒ‡ƒÿ/
-]	java:S125."<This block of commented-out lines of code should be removed.(áŒÖÂøÿÿÿÿ8´æ¼Ÿ/
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(û¡¨Ê
 R
-java:S2209a"5Change this instance-reference to a static reference.(†ƒåš8ƒ‡ƒÿ/
-b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(û¡¨Ê
+java:S2209i"5Change this instance-reference to a static reference.(†ƒåš8ƒ‡ƒÿ/
 E
-java:S1066@"/Merge this if statement with the enclosing one.(Ì‹ø
-8
-java:S1643b"Use a StringBuilder instead.(ƒ˜òy8ƒ‡ƒÿ/
-[	java:S112#"FDefine and throw a dedicated exception instead of using a generic one.(§æ÷
-J
-java:S1066?"/Merge this if statement with the enclosing one.(ş®—šÿÿÿÿÿ
+java:S1066D"/Merge this if statement with the enclosing one.(Ì‹ø
+n
+java:S2095c"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(Œ¤×½ÿÿÿÿÿ8ƒ‡ƒÿ/
+>
+java:S1643j"Use a StringBuilder instead.(½ÿ°ßùÿÿÿÿ8ƒ‡ƒÿ/
+c
+java:S11922"FDefine a constant instead of duplicating this literal "false" 3 times.(äêê¿8ËÜ½ü/
+[	java:S112'"FDefine and throw a dedicated exception instead of using a generic one.(§æ÷
 F
-java:S1481Y")Remove this unused "item" local variable.(²‚ÊÓ8ƒ‡ƒÿ/
+java:S1481_")Remove this unused "item" local variable.(²‚ÊÓ8ƒ‡ƒÿ/
+J
+java:S1066C"/Merge this if statement with the enclosing one.(ş®—šÿÿÿÿÿ
+>
+java:S1643h"Use a StringBuilder instead.(¥®¦±ÿÿÿÿÿ8÷¾ÏŸ/
+>
+java:S1643g"Use a StringBuilder instead.(ªå·ÿÿÿÿÿ8İ­´ª/
+E
+java:S1066E"/Merge this if statement with the enclosing one.(êûÄ
+9
+java:S1643k"Use a StringBuilder instead.(¤ê·Ì8ƒ‡ƒÿ/
+U
+java:S1854_"8Remove this useless assignment to local variable "item".(²‚ÊÓ8ƒ‡ƒÿ/

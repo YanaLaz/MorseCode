@@ -20,9 +20,11 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.sql.SQLException;
 
-//класс, который декодирует введённое сообщение пользователя в азбуке Морзе на русский. При корректном вводе
-// открывается окно rezEncoding.fxml, в противном случае confWindow2.fxml. Также здесь происходит импорт текстового
-// файла с сообщением от пользователя и осуществляется переход на страницу home.fxml
+/**
+ * класс, который декодирует введённое сообщение пользователя в азбуке Морзе на русский. При корректном вводе
+ * открывается окно rezEncoding.fxml, в противном случае confWindow2.fxml. Также здесь происходит импорт текстового
+ * файла с сообщением от пользователя и осуществляется переход на страницу home.fxml
+ */
 public class codeRusController {
 
     @FXML
@@ -35,14 +37,18 @@ public class codeRusController {
     private ImageView imageButtonHome2;
 
 
-    // переход на страницу главного меню при нажатии на кнопку-картинку Домой.
+    /**
+     * переход на страницу главного меню при нажатии на кнопку-картинку Домой.
+      */
     public void homeBtn() throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/org/morsecode/home.fxml"));
         Stage window = (Stage) imageButtonHome2.getScene().getWindow();
         window.setScene(new Scene(root, 700,400));
     }
 
-    // кодирование сообщения через DAO класс
+    /**
+     * кодирование сообщения через DAO класс
+      */
     public void inputCode2() throws SQLException, ClassNotFoundException, IOException {
         if (checkCode(inputCode.getText())){
             String code = Database.encoding2(inputCode.getText()); // получение результата
@@ -59,7 +65,9 @@ public class codeRusController {
         }}
     }
 
-    // проверка на корректность кода
+    /**
+     * проверка на корректность кода
+      */
     public boolean checkCode(String code) {
         for (int j = 0; j < code.length(); j++) {
             String ent = String.valueOf(code.charAt(j));
@@ -73,7 +81,9 @@ public class codeRusController {
         return true;
     }
 
-    // окно с информацией
+    /**
+     * окно с информацией
+      */
     public void window(String wind){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Информация");
@@ -82,7 +92,9 @@ public class codeRusController {
         alert.showAndWait();
     }
 
-    // метод Импорта файла
+    /**
+     * метод Импорта файла
+      */
     public void upload() throws IOException, SQLException, ClassNotFoundException {
         // FileChooser открывает вспомогающее окно с директорией проекта, где пользователь может выбарть нужный для импорта файл
         FileChooser file = new FileChooser();
@@ -127,7 +139,9 @@ public class codeRusController {
         }
     }
 
-    // метод, который передаёт значения в Database для дальнейшей записи в БД
+    /**
+     * метод, который передаёт значения в Database для дальнейшей записи в БД
+      */
     public void sendMes(String input, String output){
         message mes = new message();
         mes.setInput(input);

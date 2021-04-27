@@ -19,8 +19,10 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-// класс, который отображает страницу с результатом кодирования или декодирования принятого сообщения
-// от пользователя и осуществляется переход на страницу home.fxml.
+/**
+ * класс, который отображает страницу с результатом кодирования или декодирования принятого сообщения
+ * от пользователя и осуществляется переход на страницу home.fxml.
+  */
 public class rezEncodingController implements Initializable {
 
     @FXML
@@ -39,7 +41,9 @@ public class rezEncodingController implements Initializable {
 
     }
 
-    // переход на страницу главного меню при нажатии на кнопку-картинку Домой.
+    /**
+     * переход на страницу главного меню при нажатии на кнопку-картинку Домой.
+      */
     public void homeBtn() throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/org/morsecode/home.fxml"));
         Stage window = (Stage) imageButtonHome2.getScene().getWindow();
@@ -50,13 +54,17 @@ public class rezEncodingController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
     }
 
-    // метод устанавливает значение результата в текстовое поле
+    /**
+     * метод устанавливает значение результата в текстовое поле
+      */
     public void showRez(String text){
         rez.setText(text);
     }
 
 
-    // экспорт файла в отдельный файл
+    /**
+     * экспорт файла в отдельный файл
+      */
     public void export(){
         File myFile = new File("rezEncoding.txt");
         try{

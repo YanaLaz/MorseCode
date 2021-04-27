@@ -10,7 +10,9 @@ import javafx.stage.Stage;
 
 import java.awt.event.MouseEvent;
 
-//класс устанавливает значения для статистики и осуществляет переход на страницу home.fxml.
+/**
+ * класс устанавливает значения для статистики и осуществляет переход на страницу home.fxml.
+ */
 public class statsController {
 
     @FXML
@@ -27,13 +29,20 @@ public class statsController {
 
     }
 
-    // метод устанавливает значение самого популярного сообщения в текстовое поле
+    /**
+     * метод устанавливает значение самого популярного сообщения в текстовое поле
+      */
     public void setText1(String text){ rusLabel.setText(text); }
-    // метод устанавливает количество встречаемых раз популярного сообщения в текстовое поле
+
+    /**
+     * метод устанавливает количество встречаемых раз популярного сообщения в текстовое поле
+      */
     public void setText2(String text){ quantLabel.setText(text); }
 
 
-    // переход на страницу главного меню при нажатии на кнопку-картинку Домой.
+    /**
+     * переход на страницу главного меню при нажатии на кнопку-картинку Домой.
+      */
     @FXML
     public void homeBtn() throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/org/morsecode/home.fxml"));

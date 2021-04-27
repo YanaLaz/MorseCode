@@ -1,14 +1,20 @@
 
-j	java:S116"URename this field "SignUpName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï—Î¹
-I
-java:S1905\"'Remove this unnecessary cast to "User".(èı²Üüÿÿÿÿ8°Ñô/
-q	java:S116'"]Rename this field "SignUpCheckBoxMale" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û¶ªO
-m	java:S116$"XRename this field "SignUpCountry" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃÏ—ä
-p	java:S116!"VRename this field "login_field" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü´Ûóÿÿÿÿÿ
-s	java:S116"YRename this field "SignUpLastName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âàú‘ıÿÿÿÿ
-c	java:S112ˆ"FDefine and throw a dedicated exception instead of using a generic one.(§æ÷8¬ëô/
-n	java:S116"YRename this field "password_field" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õ†’ë
-q	java:S116"WRename this field "SignUpButton" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°ñ„Ûúÿÿÿÿ
+q	java:S116"WRename this field "SignUpButton" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°ñ„Ûúÿÿÿÿ
+m	java:S116&"XRename this field "SignUpCountry" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃÏ—ä
 a
-java:S2147:"DCombine this catch with the one at line 56, which has the same body.(ï­£Ä8û‰õ/
-t	java:S116*"_Rename this field "SignUpCheckBoxFemale" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äÄˆ–
+java:S2147<"DCombine this catch with the one at line 58, which has the same body.(ï­£Ä8û‰õ/
+p	java:S116#"VRename this field "login_field" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü´Ûóÿÿÿÿÿ
+
+java:S1130N"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(È—ó²ÿÿÿÿÿ8ÔÎ”Ó/
+›
+java:S1130N"yRemove the declaration of thrown exception 'java.lang.ClassNotFoundException', as it cannot be thrown from method's body.(È—ó²ÿÿÿÿÿ8ÔÎ”Ó/
+R
+java:S2209^"5Change this instance-reference to a static reference.(‚ÅšŠ8ÔÎ”Ó/
+I
+java:S1905`"'Remove this unnecessary cast to "User".(èı²Üüÿÿÿÿ8°Ñô/
+s	java:S116 "YRename this field "SignUpLastName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âàú‘ıÿÿÿÿ
+n	java:S116"YRename this field "password_field" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õ†’ë
+q	java:S116)"]Rename this field "SignUpCheckBoxMale" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û¶ªO
+j	java:S116"URename this field "SignUpName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï—Î¹
+t	java:S116,"_Rename this field "SignUpCheckBoxFemale" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äÄˆ–
+c	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(§æ÷8¬ëô/

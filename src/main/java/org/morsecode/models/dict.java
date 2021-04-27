@@ -3,7 +3,9 @@ package org.morsecode.models;
 import javax.persistence.*;
 
 
-//класс, который является моделью класса dictController.java, в котором прописываются поля, используемые в БД
+/**
+ * класс, который является моделью класса dictController.java, в котором прописываются поля, используемые в БД
+ */
 @Entity
 @Table(name="dict")
 public class dict {

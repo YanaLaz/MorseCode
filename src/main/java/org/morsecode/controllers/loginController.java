@@ -18,7 +18,9 @@ import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
 
-// класс авторизации пользователя. При корректном вводе логина и пароля осуществляется переход на страницу home.fxml.
+/**
+ * класс авторизации пользователя. При корректном вводе логина и пароля осуществляется переход на страницу home.fxml.
+  */
 public class loginController {
 
     @FXML
@@ -44,7 +46,9 @@ public class loginController {
     @FXML
     void initialize() {
 
-        //авторизация
+        /**
+         * авторизация
+         */
         authSignInButton.setOnAction(event -> {
             String loginText = login_field.getText().trim();
             String loginPassword = password_field.getText().trim();
@@ -72,7 +76,9 @@ public class loginController {
 
     }
 
-    // метод проверяющий существует ли пользователь в системе
+    /**
+     * метод проверяющий существует ли пользователь в системе
+      */
     private void loginUser(String loginText, String loginPassword) throws SQLException, ClassNotFoundException, IOException {
         Database database = new Database();
         User user = new User();
@@ -96,7 +102,9 @@ public class loginController {
     }
 
 
-    // переход на страницу с регистрацией — SignUp.fxml
+    /**
+     * переход на страницу с регистрацией — SignUp.fxml
+      */
     public void singInBtn() throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/org/morsecode/SignUp.fxml"));
         Stage window = (Stage) loginSignUpButton.getScene().getWindow();

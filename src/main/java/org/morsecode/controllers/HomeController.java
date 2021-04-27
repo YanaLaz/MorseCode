@@ -10,8 +10,10 @@ import org.morsecode.dao.Database;
 
 import java.util.List;
 
-// класс главного меню пользователя, в нём выбираются действия, которые перенаправляют на страницы
-// rusCode.fxml, codeRus.fxml, dict.fxml, stats.fxml, author.fxml в зависимости от выбранной кнопки.
+/**
+ * класс главного меню пользователя, в нём выбираются действия, которые перенаправляют на страницы
+ * rusCode.fxml, codeRus.fxml, dict.fxml, stats.fxml, author.fxml в зависимости от выбранной кнопки.
+  */
 public class HomeController{
 
         @FXML
@@ -35,7 +37,9 @@ public class HomeController{
         void initialize() {
         }
 
-        // переход на страницу rusCode.fxml
+        /**
+         * переход на страницу rusCode.fxml
+          */
         public void rcBtn() throws Exception {
                 Parent root = FXMLLoader.load(getClass().getResource("/org/morsecode/rusCode.fxml"));
                 Stage window = (Stage) rusCodeButton.getScene().getWindow();
@@ -43,7 +47,9 @@ public class HomeController{
 
         }
 
-        // переход на страницу codeRus.fxml
+        /**
+         * переход на страницу codeRus.fxml
+          */
         public void crBtn() throws Exception {
                 Parent root = FXMLLoader.load(getClass().getResource("/org/morsecode/codeRus.fxml"));
                 Stage window = (Stage) codeRusButton.getScene().getWindow();
@@ -51,21 +57,27 @@ public class HomeController{
 
         }
 
-        // переход на страницу dict.fxml
+        /**
+         * переход на страницу dict.fxml
+          */
         public void dictBtn() throws Exception {
                 Parent root = FXMLLoader.load(getClass().getResource("/org/morsecode/dict.fxml"));
                 Stage window = (Stage) rusDictButton.getScene().getWindow();
                 window.setScene(new Scene(root, 700,400));
         }
 
-        // переход на страницу author.fxml
+        /**
+         * переход на страницу author.fxml
+          */
         public void author() throws Exception {
                 Parent root = FXMLLoader.load(getClass().getResource("/org/morsecode/author.fxml"));
                 Stage window = (Stage) authorBtn.getScene().getWindow();
                 window.setScene(new Scene(root, 700,400));
         }
 
-        // переход на страницу stats.fxml
+        /**
+         * переход на страницу stats.fxml
+          */
         public void stats() throws Exception {
                 Database database = new Database();
 

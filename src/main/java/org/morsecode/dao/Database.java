@@ -18,11 +18,15 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
-// DAO класс, в котором прописываются все взаимодействия с базой данных.
+/**
+ * DAO класс, в котором прописываются все взаимодействия с базой данных.
+  */
 public class Database {
 
     /////////////////////// USER ///////////////////////
-    // Сохранить пользователя
+    /**
+     * Сохранить пользователя
+      */
     public void Save_user(User user) {
         Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
         Transaction tx1 = session.beginTransaction();
@@ -34,7 +38,9 @@ public class Database {
     }
 
 
-    // возвращает 1, если логин и пароль пользователя существуют в БД
+    /**
+     * возвращает 1, если логин и пароль пользователя существуют в БД
+      */
     public int getUser(User user) throws SQLException, ClassNotFoundException {
         Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
         Transaction tx1 = session.beginTransaction();
@@ -53,7 +59,9 @@ public class Database {
         return stat;
     }
 
-    // получить всех пользователей
+    /**
+     * получить всех пользователей
+      */
     public static ObservableList<User> getUserAll(){
         Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
         Transaction tx1 = session.beginTransaction();
@@ -75,7 +83,9 @@ public class Database {
 
 
     ////////////////////// DICT /////////////////////////////
-    // Получить все значения в таблице dict
+    /**
+     * Получить все значения в таблице dict
+      */
     public static ObservableList<dict> getDict() throws SQLException, ClassNotFoundException {
         Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
         Transaction tx1 = session.beginTransaction();
@@ -94,7 +104,9 @@ public class Database {
         return list;
     }
 
-    // удалить значение из таблицы dict
+    /**
+     * удалить значение из таблицы dict
+      */
     public int Delete_dict(Integer id) {
         Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
         Transaction tx1 = session.beginTransaction();
@@ -116,7 +128,9 @@ public class Database {
     }
 
     public static String unknownLetter; // используется для добавления в словаре в поле ввода неизвестную букву
-    // кодирование сообщение с русского на код Морзе
+    /**
+     * кодирование сообщение с русского на код Морзе
+      */
     public static String encoding(String enter) throws IOException, SQLException, ClassNotFoundException {
         Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
         Transaction tx1 = session.beginTransaction();
@@ -156,7 +170,9 @@ public class Database {
         return rez;
     }
 
-    // кодирование сообщение с кода Морзе на русский
+    /**
+     * кодирование сообщение с кода Морзе на русский
+      */
     public static String encoding2(String enter) throws IOException, SQLException, ClassNotFoundException {
         Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
         Transaction tx1 = session.beginTransaction();
@@ -199,7 +215,9 @@ public class Database {
         return rez;
     }
 
-    // метод обновляющий значение в словаре
+    /**
+     * метод обновляющий значение в словаре
+     */
     public void Edit(String value1, String value2 , String value3) {
         Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
         Transaction tx1 = session.beginTransaction();
@@ -211,7 +229,10 @@ public class Database {
         session.close();
     }
 
-    // метод добавляющий новое значение в словарь
+    /**
+     * метод добавляющий новое значение в словарь
+     * @param item
+     */
     public void addDict(dict item) {
         Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
         Transaction tx1 = session.beginTransaction();
@@ -223,7 +244,11 @@ public class Database {
     }
 
     /////////////////////// MESSAGES ///////////////////////
-    // метод добавления сообщения в словарь
+
+    /**
+     * метод добавления сообщения в словарь
+     * @param item
+     */
     public void addMes(message item){
         Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
         Transaction tx1 = session.beginTransaction();
@@ -234,7 +259,10 @@ public class Database {
         session.close();
     }
 
-    // метод ищущий самое популярное сообщение от пользователя
+    /**
+     * метод ищущий самое популярное сообщение от пользователя
+     * @return
+     */
     public List stats(){
         Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
         Transaction tx1 = session.beginTransaction();

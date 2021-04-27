@@ -4,7 +4,9 @@ import javafx.animation.TranslateTransition;
 import javafx.util.Duration;
 import javafx.scene.Node;
 
-// класс осуществляют действие похожее на «встряску» для определённых полей при некорректном вводе.
+/**
+ * класс осуществляют действие похожее на «встряску» для определённых полей при некорректном вводе.
+  */
 public class Shake {
     private TranslateTransition tt;
 

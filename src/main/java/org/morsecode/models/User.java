@@ -2,7 +2,9 @@ package org.morsecode.models;
 
 import javax.persistence.*;
 
-// модель класса signUpController.java, в которой прописываются поля в дальнейшем используемые для записи в БД.
+/**
+ *  модель класса signUpController.java, в которой прописываются поля в дальнейшем используемые для записи в БД.
+ */
 @Entity
 @Table(name="users")
 public class User {

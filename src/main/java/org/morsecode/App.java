@@ -6,7 +6,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-// основной класс, который осуществляет запуск программы.
+/**
+ *  основной класс, который осуществляет запуск программы.
+ */
 public class App extends Application {
 
     @Override

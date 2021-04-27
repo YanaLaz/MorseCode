@@ -7,7 +7,9 @@ import javafx.scene.Scene;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
-//класс осуществляет переход на страницу home.fxml.
+/**
+ * класс осуществляет переход на страницу home.fxml.
+ */
 public class authorController {
 
     @FXML

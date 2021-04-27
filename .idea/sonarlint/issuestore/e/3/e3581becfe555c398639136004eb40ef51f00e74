@@ -1,24 +1,27 @@
 
->
-java:S1643b"Use a StringBuilder instead.(¥®¦±ÿÿÿÿÿ8é¬‡Ÿ/
-@
-java:S1068"+Remove this unused "content" private field.(û‚Êj
-9
-java:S1643e"Use a StringBuilder instead.(¤ê·Ì8â¥ô÷/
-W
-java:S2209c"5Change this instance-reference to a static reference.(îğ„İûÿÿÿÿ8Ú¨ì€/
-[	java:S112#"FDefine and throw a dedicated exception instead of using a generic one.(§æ÷
-]	java:S125."<This block of commented-out lines of code should be removed.(áŒÖÂøÿÿÿÿ8éùÛˆ/
-U
-java:S1854["8Remove this useless assignment to local variable "item".(²‚ÊÓ8­¸Ó€/
-J
-java:S1066A"/Merge this if statement with the enclosing one.(±ä¡ùÿÿÿÿ
-g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ıÚÄùÿÿÿÿ
-F
-java:S1481[")Remove this unused "item" local variable.(²‚ÊÓ8­¸Ó€/
->
-java:S1643a"Use a StringBuilder instead.(ä¼Áûøÿÿÿÿ8®‚Ÿ/
-8
-java:S1643d"Use a StringBuilder instead.(ƒ˜òy8…øÜş/
 n
-java:S2095^"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(Œ¤×½ÿÿÿÿÿ8Õöâ÷/
+java:S2095f"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(Œ¤×½ÿÿÿÿÿ8—ßï/
+c
+java:S11922"FDefine a constant instead of duplicating this literal "false" 3 times.(äêê¿8˜ï½ü/
+U
+java:S1854b"8Remove this useless assignment to local variable "item".(²‚ÊÓ8—ßï/
+9
+java:S1643n"Use a StringBuilder instead.(¤ê·Ì8—ßï/
+>
+java:S1643m"Use a StringBuilder instead.(½ÿ°ßùÿÿÿÿ8…øÜş/
+F
+java:S1481b")Remove this unused "item" local variable.(²‚ÊÓ8—ßï/
+>
+java:S1643k"Use a StringBuilder instead.(¥®¦±ÿÿÿÿÿ8´Ø§ü/
+O
+java:S1128"-Remove this unused import 'java.util.Locale'.(åğ×±ûÿÿÿÿ8Ößï/
+b	java:S112("FDefine and throw a dedicated exception instead of using a generic one.(§æ÷8—ßï/
+G
+java:S1068"+Remove this unused "content" private field.(û‚Êj8—ßï/
+>
+java:S1643j"Use a StringBuilder instead.(ªå·ÿÿÿÿÿ8´Ø§ü/
+Q
+java:S1066E"/Merge this if statement with the enclosing one.(±ä¡ùÿÿÿÿ8—ßï/
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ıÚÄùÿÿÿÿ8—ßï/
+W
+java:S2209l"5Change this instance-reference to a static reference.(îğ„İûÿÿÿÿ8—ßï/

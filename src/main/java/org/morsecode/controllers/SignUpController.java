@@ -15,8 +15,10 @@ import org.morsecode.models.User;
 import java.io.IOException;
 import java.sql.SQLException;
 
-// класс регистрации пользователя. Добавляет значения в базу данных.
-// При успешной регистрации происходит переход на страницу login.fxml.
+/**
+ * класс регистрации пользователя. Добавляет значения в базу данных.
+ * При успешной регистрации происходит переход на страницу login.fxml.
+  */
 public class SignUpController {
 
     @FXML
@@ -74,7 +76,9 @@ public class SignUpController {
         });
     }
 
-    // добавление пользователя в БД
+    /**
+     * добавление пользователя в БД
+      */
     private boolean signUpNewUser() throws SQLException, ClassNotFoundException, IOException {
         Database dbHandler = new Database();
 
@@ -90,7 +94,9 @@ public class SignUpController {
             gender = "Женский";
 
 
-        // проверка, что логин свободен
+        /**
+         * проверка, что логин свободен
+          */
         ObservableList<User> list = dbHandler.getUserAll();
         for (int i = 0; i < list.size(); i++){
             User item = (User) list.get(i);
@@ -99,7 +105,9 @@ public class SignUpController {
                 return false;
         } }
 
-        // проверка, что пол выбран
+        /**
+         * проверка, что пол выбран
+          */
         if((!SignUpCheckBoxMale.isSelected())&&(!SignUpCheckBoxFemale.isSelected())){
             window("Выберите ваш пол!");
             return false;
@@ -132,21 +140,27 @@ public class SignUpController {
 
         window("Пользователь создан"); // окно с информацией
 
-        // открытие окна с авторизацией
+        /**
+         * открытие окна с авторизацией
+          */
         Parent root = FXMLLoader.load(getClass().getResource("/org/morsecode/login.fxml"));
         Stage window = (Stage) SignUpButton.getScene().getWindow();
         window.setScene(new Scene(root, 700,400));
         return true;
     }
 
-    // переход на страницу авторизации при нажатии на кнопку-картинку Домой.
+    /**
+     * переход на страницу авторизации при нажатии на кнопку-картинку Домой.
+      */
     public void homeBtn() throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/org/morsecode/login.fxml"));
         Stage window = (Stage) homeBtn.getScene().getWindow();
         window.setScene(new Scene(root, 700,400));
     }
 
-    // окно с информацией
+    /**
+     * окно с информацией
+      */
     public void window(String wind){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Информация");
